@@ -1,3 +1,9 @@
+build:
+  - 'newer:x_nodejs_docutils'
+test_1:
+  - 'newer:x_nodejs_docutils:example_1'
+test_2:
+  - 'newer:x_nodejs_docutils:example_2'
 test:
   - 'clean'
   - 'x_nodejs_gruntplugin_mpe'
