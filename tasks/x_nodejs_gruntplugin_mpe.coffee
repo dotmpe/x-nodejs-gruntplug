@@ -1,5 +1,5 @@
 #
-# * x-nodejs-grutplugin-mpe
+# * x-nodejs-gruntplugin-mpe
 # * 
 # *
 # * Copyright (c) 2014 
@@ -18,13 +18,15 @@ module.exports = (grunt) ->
 			separator: ", "
 		)
 
+		#console.log ['this', this]
+
 		# Iterate over all specified file groups.
 		@files.forEach (file) ->
 
+			#console.log ['file', file]
+
 			# Concat specified files.
-
 			# Warn on and remove invalid source files (if nonull was set).
-
 			# Read file source.
 			src = file.src.filter((filepath) ->
 				unless grunt.file.exists(filepath)

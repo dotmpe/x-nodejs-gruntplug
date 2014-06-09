@@ -1,14 +1,8 @@
+### Grunt x_nodejs_gruntplugin_mpe config ###
 module.exports = 
-	#options:
-	#	banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-	#build:
-	#	src: 'src/<%= pkg.name %>.js'
-	#	dest: 'build/<%= pkg.name %>.min.js'
-	#docs:
-	#	src: [ 'doc/**/*.rst' ]
 
 	#
-	# Configuration to be run (and then tested).
+	# Configurations to be run (and then tested).
 	#
 	default_options:
 		options: {}

@@ -22,7 +22,7 @@ var grunt = require('grunt');
     test.ifError(value)
 */
 
-exports.x_nodejs_grutplugin_mpe = {
+exports.x_nodejs_gruntplugin_mpe = {
   setUp: function (done) {
     // setup here if necessary
     done();

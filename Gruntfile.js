@@ -1,5 +1,5 @@
 /*
- * x-nodejs-grutplugin-mpe
+ * x-nodejs-gruntplugin-mpe
  * 
  *
  * Copyright (c) 2014 

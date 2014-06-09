@@ -1,6 +1,7 @@
 test:
   - 'clean'
   - 'x_nodejs_gruntplugin_mpe'
+  - 'x_nodejs_docutils'
   - 'nodeunit'
 default:
   - 'jshint'
