@@ -1,6 +1,8 @@
 # x-nodejs-grutplugin-mpe
 
-> The best Grunt plugin ever.
+Based on generated code. Docs below.
+Going to experiment with concrete plugins in branches,
+currently some exploration for a Python Docutils plugin is done.
 
 ## Getting Started
 This plugin requires Grunt.
