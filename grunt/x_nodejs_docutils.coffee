@@ -4,21 +4,22 @@ module.exports =  (grunt)->
 		standalone: true
 		#banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
 		
-	# Method 1: explicit src, but need to watch more files that to build
+	# Method 1: explicit dependencies
 	example_1:
-		options:
-			target_format: 'xhtml'
-		src: [ 'doc/main.rst', 'doc/foo/main.rst', 'doc/foo/bar/main.rst' ]
-		#main: 'doc/main.rst'
+		files: [
+			src: [ 'doc/main.rst', 'doc/foo/main.rst', 'doc/foo/bar/main.rst' ]
+			dest: 'build/doc1/main.html'
+		]
 
-	# Method 2: using multi-task files attribute and expand
+	# Method 2: using multi-task files attribute and expand build each individually,
+	# but no tracking of dependency
 	example_2:
 		files: [
 			expand: true
 			cwd: 'doc/'
 			src: '**/*.rst'
-			dest: 'build/'
-			ext: '.xhtml'
+			dest: 'build/doc2/'
+			ext: '.html'
 			filter: (fn)->
 				return true
 		]

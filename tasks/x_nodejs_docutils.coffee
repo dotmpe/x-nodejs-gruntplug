@@ -52,24 +52,16 @@ htdocsTasks = require '../lib/htdocsTasks'
 module.exports = (grunt) ->
 
 	grunt.registerMultiTask "x_nodejs_docutils", ".", ->
-		
-		hlpr = new htdocsTasks()
 
+		# Build standalone documents first, then get onto more sophisticated
+		# build rules
+		
+		hlpr = new htdocsTasks(grunt)
+		done = @async()
 		opts = @options()
 		if opts.standalone
 			@files.forEach (filerule)->
-
-				console.log filerule
-				if filerule.dest
-					ext = filerule.orig.ext
-					opts.target_format = ext.slice(1)
-				console.log "Building #{filerule.dest} from #{filerule.src[0]} with #{opts.target_format} "
-				#hlpr.build_standalone filerule.src[0]
-		# Build standalone documents first, then get onto more sophisticated
-		# build rules
-
-		#grunt.util.spawn(
-		#	cmd: 'python '
-		#	args: ['']
-		#)
-
+				hlpr.build_standalone opts, filerule, done
+		else
+			console.error "Nothing todo. Standalone built intended?"
+			done false
