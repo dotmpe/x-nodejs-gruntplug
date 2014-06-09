@@ -1,0 +1,2 @@
+module.exports = 
+	tests: ['tmp']
