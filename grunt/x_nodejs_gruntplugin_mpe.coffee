@@ -1,5 +1,4 @@
 module.exports = 
-	# Configuration to be run (and then tested).
 	#options:
 	#	banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
 	#build:
@@ -8,6 +7,9 @@ module.exports =
 	#docs:
 	#	src: [ 'doc/**/*.rst' ]
 
+	#
+	# Configuration to be run (and then tested).
+	#
 	default_options:
 		options: {}
 		files:
