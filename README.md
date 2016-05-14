@@ -6,13 +6,14 @@ currently some exploration for a Python Docutils plugin is done.
 
 Branch docs
 	f_htdocs
-		- Plugin for Python docutils building into
-		  book/site/manual/reference/...
+		- TODO: Grunt plugin for Python docutils
+			building into book/site/manual/reference/...
 
 		  Somewhat like other build-systems like sphynx which may provide
-		  inspiration.
+		  inspiration. Want to build own frontend, but a standard wrapper would
+		  be nice initially.
 
-TODO rewrite generated docs below
+FIXME rewrite generated docs below
 
 ## Getting Started
 This plugin requires Grunt.

@@ -24,3 +24,25 @@ module.exports =  (grunt)->
 				return true
 		]
 
+	# 
+	example_3:
+		files: [
+			expand: true
+			cwd: 'doc/'
+			src: 'build/**/*.htsite'
+			dest: 'build/'
+			ext: '.html'
+		]
+
+	# example: build all files named <target>.rst
+	# ie grunt htdocs:dist:main for main.rst
+	dist:
+		files: [
+			expand: true
+			cwd: 'doc/'
+			src: ['**/<%= grunt.task.current.args[0] %>.rst'],
+			dest: 'build/'
+			ext: '.html'
+		]
+
+

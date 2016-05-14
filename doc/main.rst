@@ -1,5 +1,5 @@
 Doc Main
 ========
 
-.. include:: foo/main.rst
+.. .. include:: foo/main.rst
 
